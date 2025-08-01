@@ -11,7 +11,7 @@
 	<form method="post">
 		<h1>Feedback Form</h1>
 		<label for="name">Name</label>
-		<input id="name" type="text" required>
+		<input id="name" type="text" minlength="3" maxlength="50" required>
 		<br><br>
 		<label for="portfolio">Portfolio</label>
 		<input id="portfolio" name="portfolio"type="URL" required>
@@ -20,7 +20,7 @@
 		<input id="favColor" name="favColor" type="Color" >
 		<br><br>
 		<label for="likeness">Likeness</label>
-		<input id="likeness" name="likeness" type="Range">
+		<input id="likeness" name="likeness" type="Range" min="1" max="100">
 		<br><br>
 		<button type="submit">Submit</button>
 	</form>
